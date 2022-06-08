@@ -4,7 +4,7 @@ const randomstring = require("randomstring");
 
    const Mutation = {
         signupUser: async (parent, args) => {
-            console.log('was hit')
+      
 
             const newUser = await prisma.user.create({
                 data: {
