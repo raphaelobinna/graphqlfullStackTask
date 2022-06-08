@@ -23,7 +23,7 @@ type CommitInfo {
   message: String
 }
 
-type Branch {
+type Commit {
   sha:  String
   html_url: String
   commit: CommitInfo
@@ -41,9 +41,9 @@ type Mutation {
 
 
 type Query {
-# Branch Queries
+# Commits Queries
 landing: String
-commits(offset: Int!, limit:Int! ): [Branch]
+commits(offset: Int!, limit:Int! ): [Commit]
 
 }
 
