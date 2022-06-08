@@ -25,7 +25,7 @@ const Query = {
         }
 
         const Commits = await octokit.request(
-            `GET /repos/facebook/react/commits`, { owner: 'facebook', repo: 'react', per_page: args.perPage }
+            `GET /repos/facebook/react/commits`, { owner: 'facebook', repo: 'react' }
         );
 
        
